@@ -1,0 +1,113 @@
+/*
+ * PROFESSIONAL DARK THEME - Poppins Font
+ * Root Color: #121212
+ * Classes: Original (movie-post, download-btn, screenshots)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- .movie-post (Main Container) --- */
+.movie-post {
+    /* Main Dark Background */
+    background: #121212; 
+    /* Poppins Font Family */
+    font-family: 'Poppins', sans-serif;
+    /* Light text color for contrast */
+    color: #e0e0e0; 
+    padding: 35px; /* Increased padding */
+    border-radius: 12px; /* Smoother corners */
+    max-width: 950px; /* Slightly wider container */
+    margin: 40px auto;
+    /* Deep shadow for elevation */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); 
+    line-height: 1.7;
+    /* Bright accent border */
+    border-top: 6px solid #64ffda; /* Professional Teal Accent */
+    border: 1px solid #222222; /* Subtle frame */
+}
+
+/* --- .movie-post img (Hero Image within the post) --- */
+.movie-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Increased separation */
+    /* Subtle glow/shadow for image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+/* --- .movie-post h2 (Main Heading) --- */
+.movie-post h2 {
+    /* Primary accent color */
+    color: #64ffda; 
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    /* Light divider line */
+    border-bottom: 2px solid #333333; 
+    font-size: 30px;
+}
+
+/* --- .movie-post p (Paragraphs) --- */
+.movie-post p {
+    font-size: 17px;
+    margin: 15px 0;
+    /* Muted text color for better reading flow */
+    color: #b0b0b0; 
+}
+
+/* --- .movie-post p strong (Strong/Bold Text) --- */
+.movie-post p strong {
+    font-weight: 600;
+    /* Highlight important text in white */
+    color: #ffffff; 
+}
+
+/* --- .download-btn (Call to Action Button) --- */
+.download-btn {
+    display: inline-block;
+    background: #3f51b5; /* Action Blue */
+    color: #ffffff;
+    padding: 15px 28px; /* Bigger button */
+    margin: 25px 10px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* Prominent shadow for dark theme CTA */
+    box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4); 
+}
+
+.download-btn:hover {
+    background: #303f9f;
+    transform: translateY(-3px); /* More noticeable lift */
+    box-shadow: 0 8px 25px rgba(63, 81, 181, 0.7);
+}
+
+/* --- .screenshots (Screenshot Grid) --- */
+.screenshots {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger minimum size for screenshots */
+    gap: 25px; /* Increased gap */
+}
+
+/* --- .screenshots img (Individual Screenshots) --- */
+.screenshots img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333333;
+}
+
+.screenshots img:hover {
+    transform: scale(1.03);
+    /* Glow on hover */
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.7); 
+}
