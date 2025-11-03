@@ -1,0 +1,153 @@
+     
+body {      
+  margin: 0;      
+  font-family: 'Poppins', sans-serif;      
+  background: #121212;      
+  color: #fff;      
+}      
+      
+.container {      
+  max-width: 900px;      
+  margin: 0 auto;      
+  padding: 20px;      
+  text-align: center;      
+}      
+      
+.poster {      
+  margin-top: 40px;      
+}      
+.poster img {      
+  width: 250px;      
+  border-radius: 20px;      
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);      
+}      
+      
+.title {      
+  font-size: 2.2rem;      
+  margin-top: 20px;      
+  font-weight: 700;      
+  color: #fff;      
+}      
+      
+.tagline {      
+  color: #aaa;      
+  font-style: italic;      
+  margin-bottom: 15px;      
+}      
+      
+.genres {      
+  margin: 10px 0;      
+}      
+.genres a {      
+  background: #1e1e1e;      
+  color: cyan;      
+  padding: 6px 12px;      
+  border-radius: 25px;      
+  text-decoration: none;      
+  margin: 4px;      
+  display: inline-block;      
+  transition: 0.3s;      
+  font-weight: 500;      
+}      
+.genres a:hover {      
+  background: cyan;      
+  color: #000;      
+}      
+      
+.info-grid {      
+  display: grid;      
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));      
+  gap: 15px;      
+  background: #1a1a1a;      
+  padding: 20px;      
+  border-radius: 15px;      
+  margin-top: 25px;      
+  text-align: left;      
+}      
+.label {      
+  color: cyan;      
+  font-weight: 600;      
+}      
+.value {      
+  color: #fff;      
+  font-weight: 400;      
+}      
+      
+.overview {      
+  background: #1a1a1a;      
+  padding: 20px;      
+  border-radius: 15px;      
+  margin-top: 20px;      
+  text-align: left;      
+  line-height: 1.7;      
+}      
+.overview .label {      
+  color: cyan;      
+  font-weight: 600;      
+}      
+      
+/* --- Screenshot Gallery --- */      
+.screenshots {      
+  background: #1a1a1a;      
+  padding: 20px;      
+  border-radius: 15px;      
+  margin-top: 25px;      
+  text-align: left;      
+}      
+.screenshots h3 {      
+  color: cyan;      
+  font-size: 1.2rem;      
+  margin-bottom: 15px;      
+  font-weight: 600;      
+}      
+.gallery {      
+  display: grid;      
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));      
+  gap: 12px;      
+}      
+.gallery img {      
+  width: 100%;      
+  border-radius: 10px;      
+  transition: transform 0.3s ease, box-shadow 0.3s ease;      
+  cursor: pointer;      
+}      
+.gallery img:hover {      
+  transform: scale(1.03);      
+  box-shadow: 0 0 10px rgba(0,255,255,0.4);      
+}      
+      
+/* --- Ghost Gradient Button --- */      
+.download-btn {      
+  display: inline-block;      
+  position: relative;      
+  overflow: hidden;      
+  padding: 12px 30px;      
+  margin-top: 30px;      
+  color: cyan;      
+  font-weight: 600;      
+  text-decoration: none;      
+  border-radius: 40px;      
+  border: 2px solid cyan;      
+  background: transparent;      
+  transition: color 0.3s ease;      
+  z-index: 1;      
+}      
+.download-btn::before {      
+  content: "";      
+  position: absolute;      
+  top: 0;      
+  left: -100%;      
+  width: 300%;      
+  height: 100%;      
+  background: linear-gradient(120deg, transparent, rgba(0,255,255,0.3), transparent);      
+  transition: all 0.6s ease;      
+  z-index: -1;      
+}      
+.download-btn:hover::before {      
+  left: 100%;      
+}      
+.download-btn:hover {      
+  color: #000;      
+  background: cyan;      
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);      
+}      
