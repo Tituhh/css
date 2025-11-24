@@ -1,28 +1,46 @@
-/* Custom Download/CTA Button Styles */
-.dwd-button {
-  color: #fff !important; /* Forces white text */
-  min-width: 210px !important;
-  background: linear-gradient(135deg, #67df03b8, #1356d5b8) !important; /* Green to Blue (semi-transparent) */
-  margin-bottom: 15px !important;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between the buttons */
+    max-width: 400px;
+    margin: 20px auto;
 }
 
-.btn.btn-sm.btn-outline {
-  color: #fff !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  padding: 8px 18px !important;
-  border-radius: 8px !important; /* Rounded corners */
-  border: none !important;
-  cursor: pointer !important;
-  min-width: 210px !important;
-  background: linear-gradient(135deg, #67df03b8, #1356d5b8) !important;
-  margin-bottom: 15px !important;
-  transition: all 0.3s ease-in-out !important; /* Smooth transition */
+.btn {
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Creates rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    width: 100%; /* Makes buttons full width of the container */
 }
 
-/* Hover Effect for the Custom Button */
-.btn.btn-sm.btn-outline:hover {
-  background: linear-gradient(135deg, #67df03, #1356d5) !important; /* Gradient becomes opaque */
-  transform: scale(1.05) !important; /* Button grows slightly */
-  box-shadow: 0 4px 12px rgb(0 0 0 / .2) !important; /* Casts a drop shadow */
+/* Green gradient style for the top buttons */
+.green-btn {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+}
+
+.green-btn:hover {
+    background: linear-gradient(to right, #388E3C, #66BB6A); /* Darker gradient on hover */
+}
+
+/* Red gradient style for the "DOWNLOAD NOW" buttons */
+.red-btn {
+    background: linear-gradient(to right, #E53935, #EF5350);
+}
+
+.red-btn:hover {
+    background: linear-gradient(to right, #D32F2F, #E53935); /* Darker gradient on hover */
+}
+
+.red-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the icon and text */
 }
