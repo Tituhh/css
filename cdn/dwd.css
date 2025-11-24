@@ -1,46 +1,49 @@
-.button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Adds space between the buttons */
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.btn {
-    padding: 15px 20px;
-    color: white;
-    border: none;
-    border-radius: 8px; /* Creates rounded corners */
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+/* Container for dark background and button alignment (optional, based on your image) */
+.download-button-container {
+    padding: 30px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    transition: background-color 0.3s; /* Smooth transition for hover effects */
-    width: 100%; /* Makes buttons full width of the container */
+    background-color: #1e1e1e; /* Dark gray background color */
 }
 
-/* Green gradient style for the top buttons */
-.green-btn {
-    background: linear-gradient(to right, #4CAF50, #81C784);
-}
-
-.green-btn:hover {
-    background: linear-gradient(to right, #388E3C, #66BB6A); /* Darker gradient on hover */
-}
-
-/* Red gradient style for the "DOWNLOAD NOW" buttons */
-.red-btn {
-    background: linear-gradient(to right, #E53935, #EF5350);
-}
-
-.red-btn:hover {
-    background: linear-gradient(to right, #D32F2F, #E53935); /* Darker gradient on hover */
-}
-
-.red-btn span {
-    display: flex;
+.download-now-button {
+    /* Layout and Text */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between the icon and text */
+    
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff; /* White text */
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    /* Sizing and Shape */
+    height: 50px;
+    padding: 0 40px;
+    border-radius: 4px; /* Slightly rounded edges */
+    
+    /* Gradient Background: Dark Pink/Purple to Bright Red */
+    background: linear-gradient(to right, #9e1b5b 0%, #ff0000 100%);
+    border: none;
+    cursor: pointer;
+    
+    /* Shadow Effect: Key to the visual style */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); /* Soft, pronounced bottom shadow */
+    
+    /* Transition for smoother hover effect */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Icon Spacing */
+.download-now-button .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Hover Effect (Optional: makes it pop slightly) */
+.download-now-button:hover {
+    /* Makes the shadow slightly darker or gives a subtle lift */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
 }
