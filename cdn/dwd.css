@@ -1,49 +1,41 @@
-/* Container for dark background and button alignment (optional, based on your image) */
-.download-button-container {
-    padding: 30px 0;
-    text-align: center;
-    background-color: #1e1e1e; /* Dark gray background color */
-}
-
-.download-now-button {
-    /* Layout and Text */
+.gradient-button {
+    /* Base Appearance */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Using font from your stylesheet */
     font-weight: 700;
-    font-size: 20px;
-    color: #ffffff; /* White text */
+    font-size: 18px;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     
-    /* Sizing and Shape */
-    height: 50px;
-    padding: 0 40px;
-    border-radius: 4px; /* Slightly rounded edges */
-    
-    /* Gradient Background: Dark Pink/Purple to Bright Red */
-    background: linear-gradient(to right, #9e1b5b 0%, #ff0000 100%);
+    padding: 12px 40px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
     
-    /* Shadow Effect: Key to the visual style */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); /* Soft, pronounced bottom shadow */
-    
-    /* Transition for smoother hover effect */
-    transition: all 0.2s ease-in-out;
+    /* Shadow and Transition for 3D/Lift Effect */
+    box-shadow: 0 4px 0 #8d002a; /* Dark "pressed" color below button */
+    transition: all 0.15s ease-out; 
 }
 
-/* Icon Spacing */
-.download-now-button .icon {
-    margin-right: 10px;
-    font-size: 1.2em;
+/* Specific Gradient Colors */
+.gradient-red-pink {
+    /* Gradient: Deep Pink/Purple to Bright Red (from your image) */
+    background: linear-gradient(to right, #9e1b5b 0%, #ff0000 100%);
 }
 
-/* Hover Effect (Optional: makes it pop slightly) */
-.download-now-button:hover {
-    /* Makes the shadow slightly darker or gives a subtle lift */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
-    transform: translateY(-2px);
+/* Hover Effect: "Press" the button */
+.gradient-red-pink:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), /* Stronger shadow when hovering (like your image) */
+                0 4px 0 #8d002a;
+    transform: translateY(-2px); /* Lifts up slightly */
+}
+
+/* Active/Clicked Effect: The button "presses down" */
+.gradient-red-pink:active {
+    box-shadow: 0 1px 0 #8d002a;
+    transform: translateY(3px); /* Moves down to simulate press */
 }
