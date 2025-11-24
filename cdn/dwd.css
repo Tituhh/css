@@ -1,7 +1,8 @@
+/* Custom Download/CTA Button Styles */
 .dwd-button {
-  color: #fff !important;
+  color: #fff !important; /* Forces white text */
   min-width: 210px !important;
-  background: linear-gradient(135deg, #67df03b8, #1356d5b8) !important;
+  background: linear-gradient(135deg, #67df03b8, #1356d5b8) !important; /* Green to Blue (semi-transparent) */
   margin-bottom: 15px !important;
 }
 
@@ -10,17 +11,18 @@
   font-size: 14px !important;
   font-weight: 500 !important;
   padding: 8px 18px !important;
-  border-radius: 8px !important;
+  border-radius: 8px !important; /* Rounded corners */
   border: none !important;
   cursor: pointer !important;
   min-width: 210px !important;
   background: linear-gradient(135deg, #67df03b8, #1356d5b8) !important;
   margin-bottom: 15px !important;
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important; /* Smooth transition */
 }
 
+/* Hover Effect for the Custom Button */
 .btn.btn-sm.btn-outline:hover {
-  background: linear-gradient(135deg, #67df03, #1356d5) !important;
-  transform: scale(1.05) !important;
-  box-shadow: 0 4px 12px rgb(0 0 0 / .2) !important;
+  background: linear-gradient(135deg, #67df03, #1356d5) !important; /* Gradient becomes opaque */
+  transform: scale(1.05) !important; /* Button grows slightly */
+  box-shadow: 0 4px 12px rgb(0 0 0 / .2) !important; /* Casts a drop shadow */
 }
