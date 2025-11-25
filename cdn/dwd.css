@@ -1,41 +1,35 @@
+
 .gradient-button {
-    /* Base Appearance */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    /* ... (Existing display, border, cursor, etc.) ... */
     
-    font-family: 'Poppins', sans-serif; /* Using font from your stylesheet */
-    font-weight: 700;
-    font-size: 18px;
+    /* Center Fix: Treat the button as a block element */
+    /* 1. Set display to 'block' so it can take up its own line */
+    display: block; 
+    
+    /* 2. Set horizontal margins to 'auto' to center the block */
+    margin-left: auto;
+    margin-right: auto;
+    /* You can shorten this to: margin: 0 auto; if you don't need vertical margin */
+    
+    /* 🤏 Adjust the size here */
+    padding: 8px 25px;
+    font-size: 1em;
+    
+    font-weight: bold;
     color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
     
-    padding: 12px 40px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+    /* 🎨 Gradient Background */
+    background: linear-gradient(to right, #9c27b0, #e91e63, #ff0000); 
     
-    /* Shadow and Transition for 3D/Lift Effect */
-    box-shadow: 0 4px 0 #8d002a; /* Dark "pressed" color below button */
-    transition: all 0.15s ease-out; 
+    /* 🌑 Drop Shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); 
+    
+    /* ... (Other properties like transition) ... */
 }
 
-/* Specific Gradient Colors */
-.gradient-red-pink {
-    /* Gradient: Deep Pink/Purple to Bright Red (from your image) */
-    background: linear-gradient(to right, #9e1b5b 0%, #ff0000 100%);
-}
 
-/* Hover Effect: "Press" the button */
-.gradient-red-pink:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), /* Stronger shadow when hovering (like your image) */
-                0 4px 0 #8d002a;
-    transform: translateY(-2px); /* Lifts up slightly */
-}
-
-/* Active/Clicked Effect: The button "presses down" */
-.gradient-red-pink:active {
-    box-shadow: 0 1px 0 #8d002a;
-    transform: translateY(3px); /* Moves down to simulate press */
+/* Optional: Hover Effect */
+.gradient-button:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* Deepen the shadow on hover */
+    transform: translateY(-2px); /* Slight lift */
 }
